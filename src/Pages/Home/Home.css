@@ -1,0 +1,19 @@
+.section {
+    height: 500px;
+}
+
+#hero {
+    background-color: red;
+}
+
+#about {
+    background-color: aliceblue;
+}
+
+#medialink {
+    background-color: aqua;
+}
+
+#contact {
+    background-color: blueviolet;
+}
