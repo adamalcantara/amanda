@@ -12,8 +12,11 @@ class Navbar extends Component {
     render() {
         return (
             <div>
+                <Link to="/">Home</Link>
+                <HashLink to="/#about">About</HashLink>
                 <HashLink to="/#shows">Shows</HashLink>
                 <Link to="/media">Media</Link>
+                <HashLink to="/#contact">Contact</HashLink>
             </div>
         )
     }
