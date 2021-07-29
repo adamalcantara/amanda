@@ -57,7 +57,28 @@
     transform: rotate(45deg) translate(-8px, -7px);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1650px) {
+    #logo {
+        width: 400px;
+    }
+
+    .navlinks {
+        margin: auto 20px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #logo {
+        width: 300px;
+    }
+
+    .navlinks {
+        font-size: 30px;
+        margin: auto 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     #navigation {
         margin-left: 0px;
         height: 100px;

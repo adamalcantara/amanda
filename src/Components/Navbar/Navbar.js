@@ -25,11 +25,11 @@ class Navbar extends Component {
                     </div>
                 </div>
                 <div className={this.state.clicked ? 'navbar active' : 'navbar'}>
-                    <Link to="/" className="navlinks">Home</Link>
-                    <HashLink to="/#about" className="navlinks">About</HashLink>
-                    <HashLink to="/#shows" className="navlinks">Shows</HashLink>
-                    <Link to="/media" className="navlinks">Media</Link>
-                    <HashLink to="/#contact" className="navlinks">Contact</HashLink>
+                    <Link to="/" className="navlinks" onClick={this.handleClick}>Home</Link>
+                    <HashLink to="/#about" className="navlinks" onClick={this.handleClick}>About</HashLink>
+                    <HashLink to="/#shows" className="navlinks" onClick={this.handleClick}>Shows</HashLink>
+                    <Link to="/media" className="navlinks" onClick={this.handleClick}>Media</Link>
+                    <HashLink to="/#contact" className="navlinks" onClick={this.handleClick}>Contact</HashLink>
                 </div>
             </div>
         )
