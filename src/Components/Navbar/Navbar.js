@@ -16,7 +16,7 @@ class Navbar extends Component {
     render() {
         return (
             <div id="navigation">
-                <img src={Logo} alt="Amanda Cacace Logo"></img>
+                <img src={Logo} alt="Amanda Cacace Logo" id="logo"></img>
                 <div id="navbar">
                     <Link to="/" className="navlinks">Home</Link>
                     <HashLink to="/#about" className="navlinks">About</HashLink>
