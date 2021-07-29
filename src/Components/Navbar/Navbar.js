@@ -18,11 +18,11 @@ class Navbar extends Component {
             <div id="navigation">
                 <img src={Logo} alt="Amanda Cacace Logo"></img>
                 <div id="navbar">
-                    <Link to="/">Home</Link>
-                    <HashLink to="/#about">About</HashLink>
-                    <HashLink to="/#shows">Shows</HashLink>
-                    <Link to="/media">Media</Link>
-                    <HashLink to="/#contact">Contact</HashLink>
+                    <Link to="/" className="navlinks">Home</Link>
+                    <HashLink to="/#about" className="navlinks">About</HashLink>
+                    <HashLink to="/#shows" className="navlinks">Shows</HashLink>
+                    <Link to="/media" className="navlinks">Media</Link>
+                    <HashLink to="/#contact" className="navlinks">Contact</HashLink>
                 </div>
             </div>
         )
