@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom"
 import { HashLink } from "react-router-hash-link"
 
+import Logo from "../../Assets/img/amandacacace.png"
+
+import "./Navbar.css"
+
 class Navbar extends Component {
     state = { clicked: false }
 
@@ -11,7 +15,8 @@ class Navbar extends Component {
 
     render() {
         return (
-            <div>
+            <div id="navigation">
+                <img src={Logo} alt="Amanda Cacace Logo"></img>
                 <div id="navbar">
                     <Link to="/">Home</Link>
                     <HashLink to="/#about">About</HashLink>
