@@ -16,8 +16,15 @@ class Navbar extends Component {
     render() {
         return (
             <div id="navigation">
-                <img src={Logo} alt="Amanda Cacace Logo" id="logo"></img>
-                <div id="navbar">
+                <div id="mobilenavigation">
+                    <img src={Logo} alt="Amanda Cacace Logo" id="logo"></img>
+                    <div id="burger" onClick={this.handleClick}>
+                        <div id="line1" className={this.state.clicked ? 'line1click' : ''}></div>
+                        <div id="line2" className={this.state.clicked ? 'line2click' : ''}></div>
+                        <div id="line3" className={this.state.clicked ? 'line3click' : ''}></div>
+                    </div>
+                </div>
+                <div className={this.state.clicked ? 'navbar active' : 'navbar'}>
                     <Link to="/" className="navlinks">Home</Link>
                     <HashLink to="/#about" className="navlinks">About</HashLink>
                     <HashLink to="/#shows" className="navlinks">Shows</HashLink>
